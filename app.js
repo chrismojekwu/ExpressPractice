@@ -4,25 +4,6 @@ const morgan = require('morgan');
 const app = express();
 app.use(morgan('dev'));
 
-app.get("/", (req,res) => {
-   res.send('on a diff level diff magnitude and that thing got longitude n lattitude');
-});
-
-app.listen(8000, () => {
-   console.log('Express server is listening on port 8000');
-});
-
-app.get('/burgers', (req,res) => {
-    res.send("i got these cheeseburgers mannn")
-});
-
-app.get('/pizza/pepperoni', (req,res) => {
-    res.send("i wany my babyback babyback babyback")
-});
-
-app.get('/pizza/pineapple', (req,res) => {
-    res.send("chillisssssssss baby back ribs :)")
-});
 
 app.get('/echo', (req, res) => {
     const responseText = `Here are some details of your request:
